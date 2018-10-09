@@ -28,7 +28,7 @@ $green:           #5e8100; // Accent.
 $red:             #cb3d4d;
 $orange:          #f98012; // Accent (never text).
 $yellow:          #fbad1a; // Accent (never text).
-$core-color:      $orange;
+$core-color:      #12009B;
 
 // Branded apps customization
 // --------------------------------------------------
@@ -116,8 +116,8 @@ $refresher-icon-color: $core-color !default;
 // --------------------------------------------------
 
 // Init screen.
-$core-color-init-screen:          #ff5c00 !default;
-$core-color-init-screen-alt:      #ff7600 !default;
+$core-color-init-screen:          #12009B !default;
+$core-color-init-screen-alt:      rgb(32, 2, 253) !default;
 $core-init-screen-spinner-color:  $white !default;
 $core-init-screen-logo-width:     60% !default;
 $core-init-screen-logo-max-width: 300px !default;

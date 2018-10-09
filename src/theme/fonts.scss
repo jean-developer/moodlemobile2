@@ -115,3 +115,27 @@
   font-weight: 700;
   src: local("Noto Sans BoldItalic"), local("NotoSans-BoldItalic"), url("#{$font-path}/noto/NotoSans-BoldItalic.woff") format("woff");
 }
+
+
+
+//Avenir
+@font-face {
+  font-family: "Avenir_Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Avenir Light"), local("Avenir-Light"), url("#{$font-path}/avenir/Avenir-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir_Book";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Avenir Book"), local("Avenir-Book"), url("#{$font-path}/avenir/Avenir-Book.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir_Black";
+  font-style: bold;
+  font-weight: 900;
+  src: local("Avenir Black"), local("Avenir-Black"), url("#{$font-path}/avenir/Avenir-Black.ttf") format("ttf");
+}

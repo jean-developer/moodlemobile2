@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.soutlogic.pslearning" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.soutlogic.pslearning" version="3.5.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Ps Learning</name>
     <description>PsLearning Aplicacion Oficial</description>
     <author>SOUTLOGIC xXJeanDarkXx</author>
@@ -118,7 +118,7 @@
         <variable name="SENDER_ID" value="694767596569" />
     </plugin>
     <plugin name="cordova-plugin-customurlscheme" spec="^4.3.0">
-        <variable name="URL_SCHEME" value="moodlemobile" />
+        <variable name="URL_SCHEME" value="http://pslearning.gob.do/pslearning" />
     </plugin>
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="cordova-plugin-zip" spec="^3.1.0" />
@@ -130,9 +130,6 @@
     <plugin name="cordova-android-support-gradle-release" spec="^1.4.4">
         <variable name="ANDROID_SUPPORT_VERSION" value="27.1.0" />
     </plugin>
-    <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
-        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|screenLayout|smallestScreenSize" android:debuggable="true" />
-    </edit-config>
+    
     <engine name="android" spec="7.0.0" />
-    <engine name="ios" spec="4.5.4" />
 </widget>

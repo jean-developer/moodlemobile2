@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
+  "name": "pslearning",
   "version": "3.5.1",
-  "description": "The official app for Moodle.",
+  "description": "PsLearning Aplicacion Oficial",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "xXJeanDarkXx",
+    "email": "jean.carlos.dev2704@gmail.com"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moodlehq/moodlemobile2.git"
+    "url": "https://github.com/xXJeanDarkXx/moodlemobile2.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -114,14 +114,13 @@
   },
   "cordova": {
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "main": "desktop/electron.js",
   "build": {
-    "appId": "com.moodle.moodledesktop",
-    "productName": "Moodle Desktop",
+    "appId": "com.soutlogic.pslearning",
+    "productName": "PSLearning Desktop",
     "files": [
       "desktop/electron.js",
       "www/**/*",
@@ -142,9 +141,9 @@
     },
     "protocols": [
       {
-        "name": "Moodle Mobile URL",
+        "name": "PSLearning Mobile URL",
         "schemes": [
-          "moodlemobile"
+          "pslearning"
         ],
         "role": "Viewer"
       }

@@ -3,7 +3,7 @@
     "appname": "PSLearning Mobile",
     "desktopappname": "PSLearning Desktop",
     "versioncode": 3520,
-    "versionname": "2.0",
+    "versionname": "3.5.1",
     "cache_expiration_time": 300000,
     "default_lang": "en",
     "languages": {
@@ -51,9 +51,12 @@
     },
     "wsservice": "moodle_mobile_app",
     "wsextservice": "local_mobile",
+    "demo_sites": {
+        
+    },
     "gcmpn": "694767596569",
-    "customurlscheme": "http://pslearning",
-    "siteurl": "http://pslearning.gob.do/pslearning/",
+    "customurlscheme": "http://pslearning.gob.do/pslearning/",
+    "siteurl": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
     "forcedefaultlanguage": false,

@@ -143,7 +143,7 @@
       {
         "name": "PSLearning Mobile URL",
         "schemes": [
-          "pslearning"
+          "http://pslearning.gob.do/pslearning"
         ],
         "role": "Viewer"
       }

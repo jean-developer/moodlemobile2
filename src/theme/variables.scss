@@ -28,7 +28,7 @@ $green:           #5e8100; // Accent.
 $red:             #cb3d4d;
 $orange:          #f98012; // Accent (never text).
 $yellow:          #fbad1a; // Accent (never text).
-$core-color:      $orange;
+$core-color:      #12009B;
 
 // Branded apps customization
 // --------------------------------------------------
@@ -116,8 +116,8 @@ $refresher-icon-color: $core-color !default;
 // --------------------------------------------------
 
 // Init screen.
-$core-color-init-screen:          #ff5c00 !default;
-$core-color-init-screen-alt:      #ff7600 !default;
+$core-color-init-screen:          #12009B !default;
+$core-color-init-screen-alt:      rgb(32, 2, 253) !default;
 $core-init-screen-spinner-color:  $white !default;
 $core-init-screen-logo-width:     60% !default;
 $core-init-screen-logo-max-width: 300px !default;
@@ -153,6 +153,7 @@ $select-ios-placeholder-color: $core-select-placeholder-color;
 $radio-ios-disabled-opacity: .5 !default;
 $checkbox-ios-disabled-opacity: .5 !default;
 $toggle-ios-disabled-opacity: .5 !default;
+$note-ios-color: $gray-dark;
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -171,6 +172,7 @@ $label-md-text-color: $text-color !default;
 $radio-md-disabled-opacity: .5 !default;
 $checkbox-md-disabled-opacity: .5 !default;
 $toggle-md-disabled-opacity: .5 !default;
+$note-md-color: $gray-dark;
 
 // App Windows Variables
 // --------------------------------------------------
@@ -188,6 +190,7 @@ $label-wp-text-color: $text-color !default;
 $radio-wp-disabled-opacity: .5 !default;
 $checkbox-wp-disabled-opacity: .5 !default;
 $toggle-wp-disabled-opacity: .5 !default;
+$note-wp-color: $gray-dark;
 
 // App Theme
 // --------------------------------------------------

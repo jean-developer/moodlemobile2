@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
+  "name": "pslearning",
   "version": "3.5.1",
-  "description": "The official app for Moodle.",
+  "description": "PSLearning Aplicacion Oficial",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "SOUTLOGIC",
+    "email": "admin@soutlogic.com"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/moodlehq/moodlemobile2.git"
+    "url": "https://github.com/xXJeanDarkXx/moodlemobile2.git"
   },
   "license": "Apache-2.0",
   "licenses": [
@@ -77,27 +77,56 @@
     "@types/node": "^8.0.47",
     "@types/promise.prototype.finally": "^2.0.2",
     "chart.js": "^2.7.2",
-    "cordova-android": "7.0.0",
-    "cordova-ios": "4.5.4",
+    "com-darryncampbell-cordova-plugin-intent": "^1.1.8",
+    "cordova-android": "^7.0.0",
+    "cordova-android-support-gradle-release": "^1.4.7",
+    "cordova-clipboard": "^1.3.0",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-app-event": "^1.2.1",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-camera": "^4.1.0",
+    "cordova-plugin-customurlscheme": "^4.4.0",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-file-opener2": "^2.2.1",
+    "cordova-plugin-file-transfer": "^1.7.1",
+    "cordova-plugin-globalization": "^1.11.0",
+    "cordova-plugin-inappbrowser": "^3.1.0",
+    "cordova-plugin-local-notifications-mm": "^1.0.13",
+    "cordova-plugin-media-capture": "^3.0.3",
+    "cordova-plugin-network-information": "^2.0.2",
+    "cordova-plugin-splashscreen": "^5.0.3",
+    "cordova-plugin-statusbar": "^2.4.3",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-zip": "^3.1.0",
+    "cordova-res": "^0.6.0",
+    "cordova-sqlite-evcore-extbuild-free": "^0.9.10",
     "font-awesome": "4.7.0",
     "ionic-angular": "^3.9.2",
+    "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
     "jszip": "^3.1.4",
     "moment": "^2.19.1",
+    "native-run": "^0.2.8",
+    "nl.kingsquare.cordova.background-audio": "^1.0.1",
+    "phonegap-plugin-push": "git+https://github.com/moodlemobile/phonegap-plugin-push.git#moodle",
     "promise.prototype.finally": "^3.0.1",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "ts-md5": "^1.2.2",
+    "web-animations-js": "^2.3.1",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.9",
+    "@ionic/lab": "2.0.6",
     "electron-rebuild": "^1.8.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clip-empty-files": "^0.1.2",
     "gulp-flatten": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-slash": "^1.1.3",
+    "gulp-util": "^3.0.8",
     "node-loader": "^0.6.0",
     "through": "^2.3.8",
     "typescript": "~2.6.2",
@@ -114,12 +143,56 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-file": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-camera": {
+        "CAMERA_USAGE_DESCRIPTION": "We need camera access to take pictures so you can attach them as part of your submissions.",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "We need photo library access to get pictures from there so you can attach them as part of your submissions.",
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-media-capture": {
+        "CAMERA_USAGE_DESCRIPTION": "We need camera access to take pictures so you can attach them as part of your submissions.",
+        "PHOTOLIBRARY_USAGE_DESCRIPTION": "We need photo library access to get pictures from there so you can attach them as part of your submissions.",
+        "MICROPHONE_USAGE_DESCRIPTION": "We need microphone access to record sounds so you can attach them as part of your submissions."
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-globalization": {},
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-clipboard": {},
+      "nl.kingsquare.cordova.background-audio": {},
+      "phonegap-plugin-push": {
+        "SENDER_ID": "694767596569"
+      },
+      "cordova-plugin-customurlscheme": {
+        "URL_SCHEME": "http://pslearning.gob.do/pslearning",
+        "ANDROID_SCHEME": " ",
+        "ANDROID_HOST": " ",
+        "ANDROID_PATHPREFIX": "/"
+      },
+      "ionic-plugin-keyboard": {},
+      "cordova-plugin-zip": {},
+      "cordova-plugin-local-notifications-mm": {},
+      "cordova-plugin-file-opener2": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "com-darryncampbell-cordova-plugin-intent": {},
+      "cordova-sqlite-evcore-extbuild-free": {},
+      "cordova-plugin-badge": {},
+      "cordova-android-support-gradle-release": {
+        "ANDROID_SUPPORT_VERSION": "27.1.0"
+      }
+    }
   },
   "main": "desktop/electron.js",
   "build": {
-    "appId": "com.moodle.moodledesktop",
-    "productName": "Moodle Desktop",
+    "appId": "com.soutlogic.pslearning",
+    "productName": "PSLearning Desktop",
     "files": [
       "desktop/electron.js",
       "www/**/*",
@@ -140,9 +213,9 @@
     },
     "protocols": [
       {
-        "name": "Moodle Mobile URL",
+        "name": "PSLearning Mobile URL",
         "schemes": [
-          "moodlemobile"
+          "http://pslearning.gob.do/pslearning"
         ],
         "role": "Viewer"
       }

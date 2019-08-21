@@ -191,7 +191,7 @@
   },
   "main": "desktop/electron.js",
   "build": {
-    "appId": "com.soutlogic.pslearning",
+    "appId": "com.psolidario.pslearning",
     "productName": "PSLearning Desktop",
     "files": [
       "desktop/electron.js",

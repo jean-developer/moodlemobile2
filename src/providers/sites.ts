@@ -424,7 +424,7 @@ export class CoreSitesProvider {
                 password: password,
                 service: service
             },
-            promise = this.http.post(siteUrl + '/login/token.php', params).timeout(CoreConstants.WS_TIMEOUT).toPromise();
+            promise = this.http.post(siteUrl + '/login/token_test.php', params).timeout(CoreConstants.WS_TIMEOUT).toPromise();
 
         return promise.then((data: any): any => {
             if (typeof data == 'undefined') {
